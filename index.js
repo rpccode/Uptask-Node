@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const flash = require('connect-flash');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
-const passport = require('./Config/passport');
+const passport = require('./config/passport');
 //importar las varibles de entorno
 require('dotenv').config({ path: 'variables.env' })
 
@@ -15,7 +15,7 @@ const helpers = require('./helpers');
 
 
 //crear la conexiion a la base de datos
-const db = require('./config/DB.js');
+const db = require('./config/db.js');
 
 require('./model/Usuarios');
 require('./model/Proyecto');
